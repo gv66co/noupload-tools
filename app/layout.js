@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'NoUpload Tools - convert and edit files without uploading them',
@@ -11,14 +12,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header className="site-header">
-          <a href="/" className="brand">
+          <Link href="/" className="brand">
             <span className="brand-mark">⛨</span> NoUpload<span className="brand-dim">.tools</span>
-          </a>
+          </Link>
           <nav className="site-nav">
-            <a href="/pdf-merge/">Merge PDF</a>
-            <a href="/pdf-split/">Split PDF</a>
-            <a href="/video-to-mp3/">Video to MP3</a>
-            <a href="/compress-video/">Compress video</a>
+            <Link href="/pdf-merge/">Merge PDF</Link>
+            <Link href="/pdf-split/">Split PDF</Link>
+            <Link href="/video-to-mp3/">Video to MP3</Link>
+            <Link href="/compress-video/">Compress video</Link>
           </nav>
         </header>
         <main>{children}</main>

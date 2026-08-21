@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -11,22 +13,22 @@ export default function Home() {
       </section>
 
       <div className="tool-grid">
-        <a className="tool-card" href="/pdf-merge/">
+        <Link className="tool-card" href="/pdf-merge/">
           <h3>Merge PDF</h3>
           <p>Combine several PDFs into one file, in the order you choose.</p>
-        </a>
-        <a className="tool-card" href="/pdf-split/">
+        </Link>
+        <Link className="tool-card" href="/pdf-split/">
           <h3>Split PDF</h3>
           <p>Pull out a page range or break a PDF into separate pages.</p>
-        </a>
-        <a className="tool-card" href="/video-to-mp3/">
+        </Link>
+        <Link className="tool-card" href="/video-to-mp3/">
           <h3>Video to MP3</h3>
           <p>Extract the audio track from any video as an MP3.</p>
-        </a>
-        <a className="tool-card" href="/compress-video/">
+        </Link>
+        <Link className="tool-card" href="/compress-video/">
           <h3>Compress video</h3>
           <p>Shrink a video so it fits in an email or a chat message.</p>
-        </a>
+        </Link>
       </div>
 
       <div className="privacy-note">
